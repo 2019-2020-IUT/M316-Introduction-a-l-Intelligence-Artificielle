@@ -1,0 +1,36 @@
+COG : 
+FUNCITON_BLOCK tipper
+	VAR_INPUT 	      food = 8,000000
+	VAR_INPUT 	   service = 2,000000
+	VAR_OUTPUT	       tip = 10,459204
+	RULE_BLOCK No1
+		Support  	Rule name 	Rule
+		0,268941	1         	IF (service IS poor) OR (food IS rancid) THEN tip IS cheap;
+		0,324652	2         	IF service IS good THEN tip IS average;
+		0,002473	3         	IF (service IS excellent) AND (food IS delicious) THEN tip IS generous;
+		0,000000	4         	IF (food IS correct) AND (service IS good) THEN tip IS average;
+
+RM :
+FUNCITON_BLOCK tipper
+	VAR_INPUT 	      food = 8,000000
+	VAR_INPUT 	   service = 2,000000
+	VAR_OUTPUT	       tip = 18,360000
+	RULE_BLOCK No1
+		Support  	Rule name 	Rule
+		0,268941	1         	IF (service IS poor) OR (food IS rancid) THEN tip IS cheap;
+		0,324652	2         	IF service IS good THEN tip IS average;
+		0,002473	3         	IF (service IS excellent) AND (food IS delicious) THEN tip IS generous;
+		0,000000	4         	IF (food IS correct) AND (service IS good) THEN tip IS average;
+
+LM:
+FUNCITON_BLOCK tipper
+	VAR_INPUT 	      food = 8,000000
+	VAR_INPUT 	   service = 2,000000
+	VAR_OUTPUT	       tip = 11,640000
+	RULE_BLOCK No1
+		Support  	Rule name 	Rule
+		0,268941	1         	IF (service IS poor) OR (food IS rancid) THEN tip IS cheap;
+		0,324652	2         	IF service IS good THEN tip IS average;
+		0,002473	3         	IF (service IS excellent) AND (food IS delicious) THEN tip IS generous;
+		0,000000	4         	IF (food IS correct) AND (service IS good) THEN tip IS average;
+
